@@ -167,7 +167,14 @@
             border: 1px solid rgba(255, 255, 255, 0.32);
             box-shadow: 0 26px 50px rgba(68, 22, 145, 0.34);
             padding: 1.3rem 1.3rem 0.7rem 1.3rem;
+            border-radius: 20px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #7A3CF0 0%, #9B5CFF 42%, #C272FF 100%);
+            border: 1px solid rgba(255, 255, 255, 0.28);
+            box-shadow: 0 22px 48px rgba(88, 34, 171, 0.34), 0 8px 20px rgba(194, 114, 255, 0.20);
+            padding: 1.25rem 1.25rem 0.55rem 1.25rem;
             position: relative;
+            isolation: isolate;
         }
         #premium-blog-layout .pbl-paa::after {
             content: '';
@@ -177,6 +184,10 @@
             background: radial-gradient(circle at 12% 10%, rgba(255,255,255,0.2), transparent 42%);
             pointer-events: none;
             opacity: 0.55;
+            border-radius: 999px;
+            background: radial-gradient(circle at 12% 16%, rgba(255,255,255,0.35), transparent 44%), radial-gradient(circle at 84% 82%, rgba(255,255,255,0.2), transparent 40%);
+            pointer-events: none;
+            z-index: 0;
         }
         #premium-blog-layout .pbl-paa details {
             margin: 0;
@@ -197,6 +208,23 @@
             gap: 12px;
             letter-spacing: 0.01em;
             line-height: 1.35;
+            background: rgba(255,255,255,0.15);
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.24);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            position: relative;
+            z-index: 1;
+        }
+        #premium-blog-layout .pbl-paa summary {
+            padding: 1.15rem 1.1rem 1.05rem 1.1rem;
+            font-size: 1.18rem;
+            font-weight: 800;
+            color: #ffffff;
+            background: transparent;
+            gap: 12px;
+            letter-spacing: 0.01em;
+            text-shadow: 0 1px 0 rgba(0,0,0,0.18);
         }
         #premium-blog-layout .pbl-paa summary::after {
             color: #ffffff;
@@ -225,6 +253,14 @@
         #premium-blog-layout .pbl-paa .pbl-details-content a {
             color: #7a3cf0;
             font-weight: 600;
+            background: rgba(255,255,255,0.24);
+            border: 1px solid rgba(255,255,255,0.32);
+        }
+        #premium-blog-layout .pbl-paa .pbl-details-content {
+            padding: 0 1.1rem 1.1rem 1.1rem;
+            color: rgba(255,255,255,0.94);
+            font-size: 1.02rem;
+            line-height: 1.7;
         }
         #premium-blog-layout .pbl-paa-head {
             text-align: center !important;
@@ -245,12 +281,19 @@
             border-radius: 999px;
             margin: 0 auto 0.55rem auto;
             box-shadow: 0 10px 20px rgba(47, 12, 104, 0.28);
+            background: rgba(255,255,255,0.17);
+            border: 1px solid rgba(255, 255, 255, 0.34);
+            padding: 7px 14px;
+            border-radius: 999px;
+            margin: 0 auto 0.55rem auto;
+            box-shadow: 0 6px 16px rgba(47, 12, 104, 0.22);
         }
         #premium-blog-layout .pbl-paa-quote {
             margin: 0;
             font-size: 0.98rem;
             font-style: italic;
             color: rgba(255,255,255,0.98);
+            color: rgba(255,255,255,0.88);
             text-align: center !important;
         }
         #premium-blog-layout summary { padding: 1rem; font-weight: 600; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
